@@ -1,0 +1,5 @@
+Le but est de show off.
+-Un bouton/ titre qui suis la souris (dans une certaine mesure)
+-des changements de couleur a l'échelle du site, pas juste une succession de page de couleur différente : un gradiant qjui change naturellement et de facon fluide tout a long de la page.
+-Annimations fancy >>
+-modifier la barre de navigation a droite de l'écran.

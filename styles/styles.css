@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+body{
+    background-color: black;
+}
+h1{
+    font-family:Tilt Neon, Helvetica, sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+h2, p{
+    font-family:Tilt Neon, Helvetica, sans-serif;
+    color: aliceblue;
+}
+a{
+    color: aliceblue;
+}
+h3{
+    color: aliceblue;
+    position: relative;
+    left: 180px;
+    bottom: 200px;
+    font-family:Tilt Neon, Helvetica, sans-serif;
+}
+.experience{
+    font-family:Tilt Neon, Helvetica, sans-serif;
+    color: aliceblue;
+    position: relative;
+    left: 180px;
+    bottom: 200px;
+}
+.header{
+    margin: 150px;
+}
+.presentation{
+    border-top: thin solid aliceblue;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+.presentation p {
+    position: relative;
+    left: 170px;
+}
+.rectangle{
+    width: 100px;
+    height: 150px;
+}
+.presentation img{
+    width: 150px;
+    position: relative;
+    bottom: 90px;
+}
+.description {
+    position: relative;
+    left: 180px;
+    bottom: 200px;
+}
