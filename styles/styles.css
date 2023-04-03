@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 body{
-    background-color: black;
+    height: 100%;
+    background-image: linear-gradient(#292955, #343466);
+    margin: 0%;
 }
 h1{
     font-family:Tilt Neon, Helvetica, sans-serif;
@@ -11,46 +13,82 @@ h2, p{
     font-family:Tilt Neon, Helvetica, sans-serif;
     color: aliceblue;
 }
-a{
-    color: aliceblue;
-}
 h3{
     color: aliceblue;
-    position: relative;
-    left: 180px;
-    bottom: 200px;
     font-family:Tilt Neon, Helvetica, sans-serif;
-}
-.experience{
-    font-family:Tilt Neon, Helvetica, sans-serif;
-    color: aliceblue;
-    position: relative;
-    left: 180px;
-    bottom: 200px;
+    margin: 0%;
 }
 .header{
-    margin: 150px;
+    margin: 100px;
 }
 .presentation{
     border-top: thin solid aliceblue;
     margin-right: 150px;
     margin-left: 150px;
+    height: 250px;
 }
 .presentation p {
+    width: 500px;
+    margin: 0%;
     position: relative;
-    left: 170px;
+    top: 15px;
 }
-.rectangle{
-    width: 100px;
-    height: 150px;
-}
-.presentation img{
-    width: 150px;
+.twticon{
+    width: 45px;
+    margin: 5px;
     position: relative;
-    bottom: 90px;
+    left: 300px;
+    top: 45px;
 }
-.description {
+.githubicon{
+    width: 45px;
+    margin: 5px;
     position: relative;
-    left: 180px;
-    bottom: 200px;
+    left: 400px;
+    bottom: 10px;
+}
+.suivezmoi{
+    position: relative;
+    top: 30px;
+}
+.pp{
+    width: 220px;
+    border-radius: 50%;
+    position: relative;
+    left: 800px;
+    bottom: 239px;
+}
+.medialist{
+    display: flex;
+    justify-content: space-around;
+}
+ul{
+    list-style: none;
+    position: relative;
+    right: 250px
+}
+.projet{
+    border-top: thin solid aliceblue;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+.projet > h2{
+    text-align: center;
+}
+.projectcontent{
+    position: relative;
+    left: 80px;
+}
+.projectmedia > img{
+    width: 300px;
+}
+.projecttext{
+    width: 500px;
+    position: relative;
+    left: 310px;
+    bottom: 170px;
+    background-color: #8EA9BF;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 5px 5px;
 }
