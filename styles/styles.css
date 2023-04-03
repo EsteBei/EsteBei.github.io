@@ -13,11 +13,6 @@ h2, p{
     font-family:Tilt Neon, Helvetica, sans-serif;
     color: aliceblue;
 }
-h3{
-    color: aliceblue;
-    font-family:Tilt Neon, Helvetica, sans-serif;
-    margin: 0%;
-}
 .header{
     margin: 100px;
 }
@@ -29,38 +24,33 @@ h3{
 }
 .presentation p {
     width: 500px;
-    margin: 0%;
+    margin:auto;
     position: relative;
     top: 15px;
+    display: flex;
+    justify-self: right;
 }
 .twticon{
     width: 45px;
     margin: 5px;
-    position: relative;
-    left: 300px;
-    top: 45px;
 }
 .githubicon{
     width: 45px;
     margin: 5px;
-    position: relative;
-    left: 400px;
-    bottom: 10px;
-}
-.suivezmoi{
-    position: relative;
-    top: 30px;
 }
 .pp{
     width: 220px;
     border-radius: 50%;
     position: relative;
     left: 800px;
-    bottom: 239px;
+    bottom: 205px;
 }
 .medialist{
+    width: 100%;
+    position: relative;
+    top: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 ul{
     list-style: none;
@@ -91,4 +81,7 @@ ul{
     padding: 5px;
     border-radius: 20px;
     box-shadow: 5px 5px;
+}
+.projecttext > p{
+    color: #DCDCDC;
 }
