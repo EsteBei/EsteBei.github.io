@@ -24,14 +24,14 @@ h2, p{
     margin-right: 150px;
     margin-left: 150px;
     height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
 }
 .presentation p {
-    width: 500px;
-    margin:auto;
-    position: relative;
-    top: 15px;
-    display: flex;
-    justify-self: right;
+    max-width: 70%;
 }
 .twticon{
     width: 45px;
@@ -42,16 +42,11 @@ h2, p{
     margin: 5px;
 }
 .pp{
-    width: 220px;
+    width: 20%;
     border-radius: 50%;
-    position: relative;
-    left: 800px;
-    bottom: 205px;
 }
 .medialist{
     width: 100%;
-    position: relative;
-    top: 30px;
     display: flex;
     justify-content: space-evenly;
 }
