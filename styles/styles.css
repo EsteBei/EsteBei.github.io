@@ -73,9 +73,6 @@ ul{
 }
 .projecttext{
     width: 500px;
-    position: relative;
-    left: 310px;
-    bottom: 170px;
     background-color: #8EA9BF;
     padding: 5px;
     border-radius: 20px;
@@ -83,4 +80,9 @@ ul{
 }
 .projecttext > p{
     color: #DCDCDC;
+}
+.projectcontent{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
