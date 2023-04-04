@@ -45,7 +45,7 @@ body {
     }
 }
 @media screen and (max-width:768px) {
-    .presentation {
+    .aligment {
         flex-direction: column-reverse;
     }
 }
@@ -70,14 +70,11 @@ h2{
     color: aliceblue;
     font-family:Roboto Mono, Helvetica, sans-serif;
 }
-.who{
-    display: flex;
-    
-}
 .presentation{
     height: auto;
     display: flex;
     align-items: center;
+    flex-direction: column;
     gap: 1em;
 }
 .presentationtxt{
@@ -85,6 +82,12 @@ h2{
 }
 .presentationp {
     max-width: 70%;
+}
+.aligment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
 }
 .followme{
     display: flex;
