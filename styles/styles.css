@@ -38,6 +38,17 @@ body {
         margin-left: 150px;
     }
 }
+@media screen and (max-width:768px) {
+    .presentation, .header {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width:768px) {
+    .presentation {
+        flex-direction: column-reverse;
+    }
+}
 body{
     height: 100%;
     background-image: linear-gradient(#292955, #343466);
@@ -59,14 +70,15 @@ h2{
     color: aliceblue;
     font-family:Roboto Mono, Helvetica, sans-serif;
 }
-.overname{
+.who{
     display: flex;
-    justify-content: flex-start;
+    
 }
 .presentation{
     height: auto;
     display: flex;
     align-items: center;
+    gap: 1em;
 }
 .presentationtxt{
     display: flex;
