@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+/* Police pour les Titres*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+/* Police pour les bouttons*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+/* Police pour les p/ txt*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 /* Default font size */
 body {
     font-size: 16px;
@@ -39,7 +43,7 @@ body {
     }
 }
 @media screen and (max-width:768px) {
-    .presentation, .header {
+    .presentation, .header, .projectcontent, .followme {
         margin-right: 15px;
         margin-left: 15px;
     }
@@ -49,26 +53,31 @@ body {
         flex-direction: column-reverse;
     }
 }
+@media screen and (min-width:768px) {
+    .projectcontent {
+        gap: 1em;
+    }
+}
 body{
     height: 100%;
-    background-image: linear-gradient(#292955, #343466);
+    background-image: linear-gradient(#292955, #484897);
     margin: 0%;
 }
 h1{
-    font-family:Roboto Mono, Helvetica, sans-serif;
+    font-family:Ubuntu, Helvetica, sans-serif;
     color: aliceblue;
-    display: flex;
+    margin-top: 0.5em;
 }
 .name{
     color: #56DCFC;
 }
 p{
-    font-family:Tilt Neon, Helvetica, sans-serif;
+    font-family: Lato, Helvetica, sans-serif;
     color: aliceblue;
 }
 h2{
     color: aliceblue;
-    font-family:Roboto Mono, Helvetica, sans-serif;
+    font-family:Ubuntu, Helvetica, sans-serif;
 }
 .presentation{
     height: auto;
@@ -122,19 +131,16 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1em;
 }
 .projectmedia > img{
     width: 300px;
     border-radius: 20px;
-    box-shadow: 5px 5px;
 }
 .projecttext{
     width: 500px;
-    background-color: #8EA9BF;
+    background-color: #6b6baf;
     padding: 5px;
     border-radius: 20px;
-    box-shadow: 5px 5px;
 }
 .projecttext > p{
     color: #DCDCDC;
