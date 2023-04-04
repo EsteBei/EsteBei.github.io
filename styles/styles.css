@@ -37,7 +37,7 @@ body {
   }
 /* When I got enongh space, make margins*/
 @media screen and (min-width:768px) {
-    .presentation, .header {
+    .presentation, .header, .projectcontent {
         margin-right: 150px;
         margin-left: 150px;
     }
@@ -56,6 +56,21 @@ body {
 @media screen and (min-width:768px) {
     .projectcontent {
         gap: 1em;
+    }
+}
+@media screen and (max-width:768px) {
+    .projectcontent {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:768px) {
+    .projecttext {
+        width: 30%;
+    }
+}
+@media screen and (max-width:768px) {
+    .projecttext {
+        width: 65%;
     }
 }
 body{
@@ -137,7 +152,6 @@ ul{
     border-radius: 20px;
 }
 .projecttext{
-    width: 500px;
     background-color: #6b6baf;
     padding: 5px;
     border-radius: 20px;
