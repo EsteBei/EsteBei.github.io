@@ -103,8 +103,16 @@ ul{
 .projet > h2{
     text-align: center;
 }
+.projectcontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
 .projectmedia > img{
     width: 300px;
+    border-radius: 20px;
+    box-shadow: 5px 5px;
 }
 .projecttext{
     width: 500px;
@@ -115,9 +123,4 @@ ul{
 }
 .projecttext > p{
     color: #DCDCDC;
-}
-.projectcontent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
