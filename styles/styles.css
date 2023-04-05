@@ -133,6 +133,7 @@ h2{
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 ul{
     list-style: none;
