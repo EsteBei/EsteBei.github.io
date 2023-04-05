@@ -166,9 +166,35 @@ ul{
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.2s ease-in-out;
 }
-.detailpage{
+modal{
     display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    background-color:#292955;
+    padding: 10px;
+    width: 70%;
+    overscroll-behavior: contain;
 }
-.blurbackground{
-    
+.canva > img{
+    width: 30%;
+}
+.blur{
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+.noscroll{
+    overflow: hidden;
+}
+.Close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 16px;
+}
+  .Close:hover, .Close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
