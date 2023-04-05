@@ -152,6 +152,7 @@ ul{
 .projectmediaimg{
     width: 300px;
     border-radius: 20px;
+    cursor: pointer;
 }
 .projecttext{
     background-color: #6b6baf;
@@ -167,4 +168,7 @@ ul{
 }
 .detailpage{
     display: none;
+}
+.blurbackground{
+    
 }
