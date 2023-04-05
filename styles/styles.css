@@ -174,3 +174,14 @@ ul{
 :hover.hoverbtn {
     opacity: 1;
 }
+button {
+    background-color: rgba(10, 10, 10, 0);
+    border: none;
+}
+.projectmedia > img:hover {
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s ease-in-out;
+}
+.detailpage{
+    display: none;
+}
