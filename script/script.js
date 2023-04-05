@@ -4,12 +4,12 @@ function toggleDetails() {
       details.style.display = 'block';
       var mybody = document.querySelector('.fakebody');
       mybody.classList.add("blur");
-      mybody.classList.add("noscroll");
+      document.body.style.overflow = 'hidden';
     } else {
       details.style.display = 'none';
       var mybody = document.querySelector('.fakebody');
       mybody.classList.remove("blur");
-      mybody.classList.remove("noscroll");
+      document.body.style.overflow = 'auto';
     }
   }
   

@@ -73,6 +73,12 @@ body {
         width: 65%;
     }
 }
+/* when the screen is like a phone, make it take more space so that it's readable*/
+@media screen and (max-width:768px) {
+    modal {
+        width: 100%;
+    }
+}
 body{
     height: 100%;
     background-image: linear-gradient(#292955, #484897);
@@ -202,6 +208,4 @@ modal{
     color: aliceblue;
     display: flex;
 }
-.noscroll{
-    overflow: hidden;
-}
+
