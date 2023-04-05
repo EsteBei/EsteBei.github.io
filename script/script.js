@@ -1,4 +1,8 @@
-function showdetails() {
-    const list = document.getElementsByClassName(".detailpage").classlist;
-    list.add(".show")
+function toggleDetails() {
+    var details = document.querySelector('.detailpage');
+    if (details.style.display === 'none') {
+      details.style.display = 'block';
+    } else {
+      details.style.display = 'none';
+    }
   }
