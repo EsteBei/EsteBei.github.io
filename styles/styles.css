@@ -155,7 +155,7 @@ ul{
 }
 .projecttext{
     background-color: #6b6baf;
-    padding: 5px;
+    padding-left: 30px;
     border-radius: 20px;
 }
 .projecttext > p{
