@@ -74,9 +74,14 @@ body {
     }
 }
 /* when the screen is like a phone, make it take more space so that it's readable*/
+@media screen and (min-width:768px) {
+    modal {
+        width: 50%;
+    }
+}
 @media screen and (max-width:768px) {
     modal {
-        width: 100%;
+        width: 90%;
     }
 }
 body{
@@ -179,33 +184,45 @@ modal{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 99;
-    background-color:#292955;
+    background-color: aliceblue;
     padding: 10px;
-    width: 50%;
     overscroll-behavior: contain;
+    border-radius: 20px;
 }
-.canva > img{
+modal > div > p {
+    color: #000;
+    font-family: Lato, Helvetica, sans-serif;
+}
+.imgdescchess{
     width: 40%;
+}
+.imgdescgoogle{
+    width: 40%;
+    height: auto;
 }
 .blur{
     filter: blur(4px);
     -webkit-filter: blur(4px);
 }
 .closebtn {
-    color: #aaaaaa;
+    color: black;
     position: fixed;
     top: 0;
     right: 0;
     font-size: 16px;
 }
   .closebtn:hover, .closebtn:focus {
-    color: #000;
+    color: black;
     text-decoration: none;
     cursor: pointer;
 }
-.tittledesc{
+.tittledesc {
     font-family:Ubuntu, Helvetica, sans-serif;
-    color: aliceblue;
+    color: black;
     display: flex;
 }
-
+.imgdesc{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
