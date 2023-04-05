@@ -188,12 +188,12 @@ modal{
 .noscroll{
     overflow: hidden;
 }
-.Close {
+.close {
     color: #aaaaaa;
     float: right;
     font-size: 16px;
 }
-  .Close:hover, .Close:focus {
+  .close:hover, .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
