@@ -146,6 +146,7 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    position:relative ;
 }
 .projectmedia > img{
     width: 300px;
@@ -158,4 +159,17 @@ ul{
 }
 .projecttext > p{
     color: #DCDCDC;
+}
+/* Commence ici le boutton de contenu*/
+.hoverbtn {
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+:hover.hoverbtn {
+    opacity: 1;
 }
