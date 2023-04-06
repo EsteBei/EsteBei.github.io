@@ -199,6 +199,7 @@ modal{
 modal > div > p {
     color: #000;
     font-family: Lato, Helvetica, sans-serif;
+    padding: 20px;
 }
 .imgdescchess{
     width: 40%;
@@ -252,4 +253,10 @@ modal > div > p {
 }
 .img-container > a > img {
     width: 100%;
+}
+.soustitre{
+    font-family:Ubuntu, Helvetica, sans-serif;
+    color: black;
+    display: flex;
+    justify-content: center;
 }
