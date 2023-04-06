@@ -200,7 +200,8 @@ modal{
 modal > div > p {
     color: #000;
     font-family: Lato, Helvetica, sans-serif;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 5px;
 }
 .imgdescchess{
