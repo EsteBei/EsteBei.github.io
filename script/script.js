@@ -12,4 +12,3 @@ function toggleDetails() {
       document.body.style.overflow = 'auto';
     }
   }
-  
