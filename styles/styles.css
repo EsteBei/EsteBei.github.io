@@ -302,6 +302,28 @@ a{
     padding-left: 20px;
     margin: 0%;
 }
+.maincontentreverse{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1em;
+    margin-bottom: 70px;
+}
+.maincontentreverse p {
+    color: #DCDCDC;
+    background-color: #6b6baf;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 20px;
+    margin: 0%;
+}
+@media screen and (max-width:768px) {
+    .maincontentreverse{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .projecttext{
     display: flex;
     flex-direction: column;
