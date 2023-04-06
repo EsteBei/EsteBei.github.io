@@ -74,6 +74,12 @@ body {
         width: 90%;
     }
 }
+@media screen and (max-width:768px) {
+    .maincontent{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .header {
     text-align: center;
 }
@@ -267,11 +273,26 @@ a{
 .projectinfo{
     font-family: Ubuntu, Helvetica, sans-serif;
     color: aliceblue;
+    padding: 5px;
+}
+.type{
+    display: flex;
+    flex-direction: row;
+}
+.projecttittle{
+    margin: 0%;
 }
 .maincontent{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    gap: 1em;
+}
+@media screen and (max-width:768px) {
+    .maincontent{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .maincontent p {
     color: #DCDCDC;
@@ -279,9 +300,15 @@ a{
     border-radius: 20px;
     padding: 5px;
     padding-left: 20px;
+    margin: 0%;
 }
 .projecttext{
     display: flex;
     flex-direction: column;
     width: 30%;
+}
+@media screen and (max-width:768px) {
+    .projecttext{
+        width: 90%;
+    }
 }
