@@ -115,7 +115,7 @@ h2{
     display: flex;
 }
 .presentationp {
-    max-width: 70%;
+    width: 70%;
 }
 .aligment{
     display: flex;
