@@ -1,4 +1,5 @@
 function toggleDetails() {
+  console.log("test");
     var details = document.querySelector('.detailpage');
     if (details.style.display === 'none') {
       details.style.display = 'block';
@@ -12,3 +13,4 @@ function toggleDetails() {
       document.body.style.overflow = 'auto';
     }
   }
+
