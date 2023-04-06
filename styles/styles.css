@@ -37,13 +37,13 @@ body {
   }
 /* When I got enongh space, make margins*/
 @media screen and (min-width:768px) {
-    .presentation, .header, .projectcontent {
+    .presentation, .header {
         margin-right: 150px;
         margin-left: 150px;
     }
 }
 @media screen and (max-width:768px) {
-    .presentation, .header, .projectcontent, .followme {
+    .presentation, .header, .followme {
         margin-right: 15px;
         margin-left: 15px;
     }
@@ -54,22 +54,12 @@ body {
     }
 }
 @media screen and (min-width:768px) {
-    .projectcontent {
-        gap: 1em;
-    }
-}
-@media screen and (max-width:768px) {
-    .projectcontent {
-        flex-direction: column;
-    }
-}
-@media screen and (min-width:768px) {
-    .projecttext {
+    .projecontent p {
         width: 30%;
     }
 }
 @media screen and (max-width:768px) {
-    .projecttext {
+    .projecontent p {
         width: 65%;
     }
 }
@@ -159,7 +149,7 @@ ul{
 }
 .projectcontent{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     position:relative ;
 }
@@ -176,14 +166,13 @@ ul{
     border-color: #484897;
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
 }
-.projecttext{
+.projecontent p{
+    color: #DCDCDC;
     background-color: #6b6baf;
     border-radius: 20px;
     padding-left: 10px; 
 }
-.projecttext > p{
-    color: #DCDCDC;
-}
+
 modal{
     display: none;
     height: 90%;
@@ -261,9 +250,38 @@ modal > div > p {
 .img-container > a > img {
     width: 100%;
 }
+/* soustitre de la fenetre modal*/
+a{
+    text-decoration: none;
+}
 .soustitre{
     font-family:Ubuntu, Helvetica, sans-serif;
     color: black;
     display: flex;
     justify-content: center;
+}
+.soustitre:hover{
+    color: #484897;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.projectinfo{
+    font-family: Ubuntu, Helvetica, sans-serif;
+    color: aliceblue;
+}
+.maincontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.maincontent p {
+    color: #DCDCDC;
+    background-color: #6b6baf;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 20px;
+}
+.projecttext{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
 }
