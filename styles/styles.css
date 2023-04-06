@@ -167,6 +167,14 @@ ul{
     width: 300px;
     border-radius: 20px;
     cursor: pointer;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(16, 14, 88);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.projectmediaimg:hover{
+    border-color: #484897;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
 }
 .projecttext{
     background-color: #6b6baf;
@@ -175,10 +183,6 @@ ul{
 }
 .projecttext > p{
     color: #DCDCDC;
-}
-.projectmedia > img:hover {
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
-    transition: box-shadow 0.2s ease-in-out;
 }
 modal{
     display: none;
@@ -198,10 +202,25 @@ modal > div > p {
 }
 .imgdescchess{
     width: 40%;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(16, 14, 88);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.imgdescchess:hover{
+    border-color: #484897;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
 }
 .imgdescgoogle{
     width: 40%;
-    height: auto;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(16, 14, 88);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.imgdescgoogle:hover{
+    border-color: #484897;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
 }
 .blur{
     filter: blur(4px);
