@@ -190,7 +190,7 @@ modal{
     background-color: aliceblue;
     padding: 10px;
     border-radius: 20px;
-    overflow: auto;
+    overflow-y: scroll;
 }
 modal > div > p {
     color: #000;
