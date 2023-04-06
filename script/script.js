@@ -13,19 +13,3 @@ function toggleDetails() {
       document.body.style.overflow = 'auto';
     }
   }
-
-  function toggleDetails() {
-    console.log("test");
-      var details = document.querySelector('.detailpage2');
-      if (details.style.display === 'none') {
-        details.style.display = 'block';
-        var mybody = document.querySelector('.fakebody');
-        mybody.classList.add("blur");
-        document.body.style.overflow = 'hidden';
-      } else {
-        details.style.display = 'none';
-        var mybody = document.querySelector('.fakebody');
-        mybody.classList.remove("blur");
-        document.body.style.overflow = 'auto';
-      }
-    }
