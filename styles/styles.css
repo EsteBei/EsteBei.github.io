@@ -181,7 +181,7 @@ ul{
 
 modal{
     display: none;
-    height: 90%;
+    height: 80%;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -278,6 +278,7 @@ a{
 .type{
     display: flex;
     flex-direction: row;
+    gap: 0.25em;
 }
 .projecttittle{
     margin: 0%;
