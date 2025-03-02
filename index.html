@@ -1,337 +1,466 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>Esteban Beillonnet - portfolio</title>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - Beillonnet Esteban</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
 </head>
-<body>
-    <div class="bg"></div>
-    <div class="fakebody">
-        <div class="header">
-            <h1>Je m'appelle <span class="name">Esteban</span>,</h1>
-            <h1>voici mon portfolio.</h1>
-        </div>
-        <div class="presentation">
-            <h2>
-                Qui suis-je ?
-            </h2>
-            <div class="aligment">
-                <!--MEttre un effet de over sur les textes spécifiques comme MMI pour afficher une description/definition flotante-->
-                <p class="presentationp">
-                    Je m’appelle Esteban Beillonnet et je suis actuellement
-                    en première année de BUT MMI à l'IUT Nancy Charlemagne.
-                    Ce site est le résultat d’un apprentissage en autodidacte d'html css et javascript.
-                    Je recherche encore ma voie et je vais donc apprendre l'animation 2d par moi-même! 
-                </p>
-                <img class="pp" src="./images/Photo trombi carré.jpg" alt="profilepicture">
-            </div>
-        </div>
-        <div class="projet">
-            <h2>Voici mes projets...</h2>
-            <div class="maincontent">
-                <div class="projecttext">
-                    <div class="projectinfo">
-                        <div class="type">
-                            <span class="date">5 Avril 2023</span>
-                            <span>•</span>
-                            <span class="type">école</span>
-                        </div>
-                        <h3 class="projecttittle">Web developpement</h3>
-                    </div>
-                        <p>
-                            Grâce à mes cours j’ai appris à développer des sites webs en utilisant des services dédiés (google sites) mais aussi en HTML et CSS pur. C’est cette dernière perspective qui m’a le plus intéressé, c’est pourquoi ce site a été développé "from scratch".
-                        </p>
-                </div>
-                    <img src="./images/webdevmedia.jpg" alt="websites" class="projectmediaimg" onclick="toggleDetails()">
-            </div>
-            <div class="maincontentreverse">
-                <div class="projecttext">
-                    <div class="projectinfo">
-                        <div class="type">
-                            <span class="date">16 janvier 2023</span>
-                            <span>•</span>
-                            <span class="type">école</span>
-                        </div>
-                        <h3 class="projecttittle">ingénieur son et lumière lors de la finale du challenge de la veille</h3>
-                    </div>
-                        <p>
-                            La classe de première année de BUT infonum à L'IUT Bordeaux Montaigne, a eu la charge d’organiser la finale du challenge de la veille, vous pouvez retrouver ici la rediffusion du direct de l’évènement.
-                        </p>
-                </div>
-                    <img src="./images/challengeveille.png" alt="challenge de la veille" class="projectmediaimg" onclick="toggleElement()">
-            </div>
 
-            <div class="maincontent">
-                <div class="projecttext">
-                    <div class="projectinfo">
-                        <div class="type">
-                            <span class="date">5 Avril 2023</span>
-                            <span>•</span>
-                            <span class="type">école</span>
-                        </div>
-                        <h3 class="projecttittle">portfolio Photo</h3>
-                    </div>
-                        <p>
-                            Durant ma première année de BUT, nous avons dû réaliser un portfolio photo.
-                        </p>
-                </div>
-                    <img src="./images/portfoliopreview.jpg" alt="portfolio" class="projectmediaimg" onclick="toggleDetails2()">
-            </div>
 
-            <div class="maincontentreverse">
-                <div class="projecttext">
-                    <div class="projectinfo">
-                        <div class="type">
-                            <span class="date">Année 2022/2023</span>
-                            <span>•</span>
-                            <span class="type">école</span>
-                        </div>
-                        <h3 class="projecttittle">Mes projets de PAO</h3>
-                    </div>
-                        <p>
-                            Durant cette année j’ai aussi eu de nombreuses occasions d’utiliser des logiciels ou des sites de design et de retouches photo. Voici mes productions.
-                        </p>
-                </div>
-                    <img src="./images/PAO/preview mockup.png" alt="preview PAO" class="projectmediaimg" onclick="toggleDetails3()">
-            </div>
+<body id="top">
 
-            <div class="maincontent">
-                <div class="projecttext">
-                    <div class="projectinfo">
-                        <div class="type">
-                            <span class="date">Année 2022/2023</span>
-                            <span>•</span>
-                            <span class="type">école</span>
-                        </div>
-                        <h3 class="projecttittle">Production vidéo</h3>
-                    </div>
-                        <p>
-                            Certains travaux cette année m'ont demandé de produire des vidéos de rendus. Mais c’est dès le lycée que j’ai dû réaliser ma première vidéo pour l’école.
-                        </p>
-                </div>
-                    <img src="./images/previewvidéo.png" alt="preview vidéo votage sptiale" class="projectmediaimg" onclick="toggleDetails4()">
-            </div>
-
-            <div class="maincontentreverse">
-                <div class="projecttext">
-                    <div class="projectinfo">
-                        <div class="type">
-                            <span class="date">20 février 2022</span>
-                            <span>•</span>
-                            <span class="type">Personnel</span>
-                        </div>
-                        <h3 class="projecttittle">Compte de dessins</h3>
-                    </div>
-                        <p>
-                            Ayant commencé à apprendre à dessiner, j’ai décidé, pour garder la motivation de poster mes dessins sur twitter, voici le lien!
-                        </p>
-                </div>
-                    <img src="./images/Previewdrawing.jpg" alt="preview dessins" class="projectmediaimg" onclick="toggleDetails5()">
-            </div>
-
-            <div class="maincontent">
-                <div class="projecttext">
-                    <div class="projectinfo">
-                        <div class="type">
-                            <span class="date">Année 2022/2023</span>
-                            <span>•</span>
-                            <span class="type">école</span>
-                        </div>
-                        <h3 class="projecttittle">Bulletin de notes du 1ère semèstre</h3>
-                    </div>
-                        <p>
-                            La formation de BUT InfoNum ne valide pas de semestre, cependant après avoir demandé, j'ai reçu un certificat à titre indicatif de notes reçues sur le premier semestre.
-                        </p>
-                </div>
-                    <img src="./images/previewrelevedenote.png" alt="preview d'un relevé de note" class="projectmediaimg" onclick="toggleDetails6()">
-            </div>
-            
-
-        </div>
-        
-        <h2 class="followme">
-            Suivez moi sur mes réseaux pour plus de nouvelles !
-        </h2>
-        <div class="contact">
-            <div class="medialist">
-                <div class="twitterlink">
-                    <a href="https://twitter.com/nishioishinsimp" target="_blank">
-                        <img class="twticon" src="./images/logo-black.png" alt="Twitter">
-                    </a>
-                </div>
-                <div class="githublink">
-                    <a href="https://github.com/EsteBei" target="_blank"><img class="githubicon" src="./images/github-mark.svg" alt="GitHub"></a>
-                </div>
-            </div>
+    
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </div>
 
-    <!-- MODAL website-->
-    <modal class="detailpage" style="display: none;">
-        <div class="canva">
-            <button class="closebtn" onclick="toggleDetails()">&times;</button>
-            <h3 class="tittledesc">Mes projets web :</h3>
-            <div class="imgdesc">
-                <div class="img-container">
-                    <a href="https://estebei.github.io/chesswebsite/" target="_blank"><img src="./images/chesswebsitehtml.png" alt="image website chess" class="imgdescchess"></a>
-                    <a href="https://estebei.github.io/chesswebsite/"><p class="soustitre">Site en html/css</p></a>
-                </div>
-                <div class="img-container">
-                    <a href="https://sites.google.com/view/les-echecs-vu-par-un-debutant/accueil" target="_blank"><img src="./images/sitechessgoogle.png" alt="image website chess on google sites" class="imgdescchess"></a>
-                    <a href="https://sites.google.com/view/les-echecs-vu-par-un-debutant/accueil"><p class="soustitre">Site google sites</p></a>
-                </div>
-            </div>
-            <p>
-                Le premier site que j’ai réalisé, lui aussi en HTML et CSS, était un projet sur les échecs. Le design recherché était quelque chose de propre et sobre, mais qui fonctionne. On peut noter qu’il a été fait l’effort de développer des boutons afin de rediriger sur mes réseaux sociaux les potentiels visiteurs. Ces boutons ont aussi la particularité de faire apparaître un texte lorsque l’on les survole. C’est cette simple fonctionnalité qui m’a donné envie de continuer à apprendre et pratiquer! 
-                <br>
-                <br>Le deuxième site que j’ai réalisé était sur Google site, l’idée de faire un site qui avait un design plaisant était l’objectif. Cependant je trouve qu’au final le premier site est mieux réussi. 
-                C’est donc dans cette idée que j’ai décidé de faire ce site en HTML et CSS.
-            </p>
-        </div>
-    </modal>
-    <!--Modal CDLV-->
-    <modal class="element" style="display: none;">
-        <div class="canva">
-            <button class="closebtn" onclick="toggleElement()">&times;</button>
-            <h3 class="tittledesc">Challenge de la veille</h3>
-            <div class="imgdesc">
-                <div class="img-container">
-                    <a href="https://youtu.be/3ScbH7TEUjs" target="_blank"><img src="./images/challengeveille.png" alt="challenge de la veille" class="imgdescchess"></a>
-                    <a href="https://youtu.be/3ScbH7TEUjs"><p class="soustitre">Rediffusion de la finale du Chanllenge de la veille</p></a>
-                </div>
-            </div>
-            <p>
-                En plus d’avoir été le référent de l’organisation (vérifier et coordonner l’avancement des travaux de chaque pôle). J’ai directement participé à l’organisation avec l’équipe technique. 
-                Nous avons mis en place un poste de direct, et préparé les caméras et lumières avant l’évènement. Durant la finale, j’ai été désigné  ingénieur son et lumière.
-            </p>
-        </div>
-    </modal>
-    <!--Modal portfolio photo-->
-    <modal class="detailpage2" style="display: none;">
-        <div class="canva">
-            <button class="closebtn" onclick="toggleDetails2()">&times;</button>
-            <h3 class="tittledesc">Mon portfolio photo</h3>
-            <div class="imgdescphoto">
-                <div class="img-containerphoto">
-                    <img src="./images/portfoliophoto/portfoliopreview.jpg" alt="portfolio preview" class="imgdescgoogle">
-                    <p class="soustitrenonclicable">Preview du portfolio</p>
-                </div>
-                <div class="img-containerphoto">
-                    <img src="./images/portfoliophoto/pub.jpg" alt="Photo pub" class="imgdescgoogle">
-                    <p class="soustitrenonclicable">Photo pub</p>
-                </div>
-                <div class="img-containerphoto">
-                    <img src="./images/portfoliophoto/photo interview.jpg" alt="Photo interview" class="imgdescgoogle">
-                    <p class="soustitrenonclicable">Photo interview</p>
-                </div>
-                <div class="img-containerphoto">
-                    <img src="./images/portfoliophoto/low-key.jpg" alt="Photo low-key" class="imgdescgoogle">
-                    <p class="soustitrenonclicable">Low-key</p>
-                </div>
-            </div>
-            <p>
-                Nous avons dû en cours réaliser un portfolio de photos. Tout d’abord il à fallu prendre des photos en low-key, c'est-à-dire avec peu de luminosité. Cela à été fait avec plusieurs expériences de lumières différentes. Nous avons ensuite eu à faire une photo de type interview, une photo copiant l’esthétique d’une pub de parfum et enfin une photo en high-key (haute luminosité). 
-                Toutes ces photos ont ensuite été retouchées sur Photoshop. En appliquant des retouches sur les niveaux, la colorimétrie ou encore en les rognant.
-            </p>
-        </div>
-    </modal>
 
-    <modal class="detailpage3" style="display: none;">
-        <div class="canva">
-            <button class="closebtn" onclick="toggleDetails3()">&times;</button>
-            <h3 class="tittledesc">Mon portfolio PAO</h3>
-            <div class="imgdescphoto">
-                <div class="img-containerphoto">
-                    <img src="./images/PAO/preview mockup.png" alt="portfolio PAO preview" class="imgdescgoogle">
-                    <p class="soustitrenonclicable">Preview du portfolio de PAO</p>
-                </div>
-                <div class="img-containerphoto">
-                    <img src="./images/PAO/mockup_livre.png" alt="Mockup livre" class="imgdescgoogle">
-                    <p class="soustitrenonclicable">Mockup livre</p>
-                </div>
-                <div class="img-containerphoto">
-                    <img src="./images/PAO/Mockupmagasin.png" alt="Mockup magasine" class="imgdescgoogle">
-                    <p class="soustitrenonclicable">Mockup magasine</p>
-                </div>
-                <div class="img-containerphoto">
-                    <img src="./images/PAO/Datatitanic.png" alt="visualisation de donnée sur le Titanic" class="imgdescgoogle">
-                    <p class="soustitrenonclicable">visualisation de donnée sur illustrator</p>
-                </div>
-                <div class="img-containerphoto">
-                    <img src="./images/PAO/Polaroidborx.png" alt="Polaroid Bordeaux" class="imgdescgoogle">
-                    <p class="soustitrenonclicable">Un simple effet de Polaroid</p>
-                </div>
-                <div class="img-containerphoto">
-                    <img src="./images/PAO/Maison de ranch.png" alt="image ranch" class="imgdescgoogle">
-                    <p class="soustitrenonclicable">Un excercice de modification de couleurs</p>
-                </div>
-                <div class="img-containerphoto">
-                    <img src="./images/PAO/bonhome patate.png" alt="Monatge photo d'une tomate" class="imgdescgoogle">
-                    <p class="soustitrenonclicable">Un excercice simple de montage photo</p>
-                </div>
-            </div>
-            <p>
-                Nous avons dû en cours réaliser un portfolio de photos. Tout d’abord il a fallu prendre des photos en low-key, c'est-à-dire avec peu de luminosité. Cela a été fait avec plusieurs expériences de lumières différentes. Nous avons ensuite eu à faire une photo de type interview, une photo copiant l’esthétique d’une pub de parfum et enfin une photo en high-key (haute luminosité). Toutes ces photos ont ensuite été retouchées sur Photoshop. En appliquant des retouches sur les niveaux, la colorimétrie ou encore en les rognant.
-            </p>
-        </div>
-    </modal>
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
 
-    <modal class="detailpage4" style="display: none;">
-        <div class="canva">
-            <button class="closebtn" onclick="toggleDetails4()">&times;</button>
-            <h3 class="tittledesc">Production vidéo</h3>
-            <div class="imgdesc">
-                <div class="img-container">
-                    <a href="https://youtu.be/F5Jbnx_mLO4" target="_blank"><img src="./images/previewvidéo.png" alt="Vidéo 2023" class="imgdescchess"></a>
-                    <a href="https://youtu.be/F5Jbnx_mLO4"><p class="soustitre">l'évolution du voyage spatial dans l'histoire et la SF</p></a>
-                </div>
-                <div class="img-container">
-                    <a href="https://youtu.be/s04wJsVSCo4" target="_blank"><img src="./images/Capture d’écran (9).png" alt="Vidéo lycée preview" class="imgdescchess"></a>
-                    <a href="https://youtu.be/s04wJsVSCo4"><p class="soustitre">Vidéo de présentation d'un sujet en anglais</p></a>
-                </div>
-            </div>
-            <p>
-                C’est dès le lycée que j’ai dû réaliser ma première vidéo pour l’école (à droite), étant donné que c'était quelque chose de nouveau pour moi, j'ai eu du mal à trouver un logiciel gratuit, et je n'ai malheureusement pas pu exporter la vidéo en haute définition. 
-                Les deux vidéos ont été réalisées en temps limité, surtout la dernière de cette année. J'ai cependant pu travailler plus vite car j'avais les bases depuis la première vidéo. 
-                <br>Je pense pouvoir produire un montage de meilleure qualité encore, si j'ai l'occasion et le temps.
-            </p>
-        </div>
-    </modal>
 
-    <modal class="detailpage5" style="display: none;">
-        <div class="canva">
-            <button class="closebtn" onclick="toggleDetails5()">&times;</button>
-            <h3 class="tittledesc">Compte twitter de dessins</h3>
-            <div class="imgdesc">
-                <div class="img-container">
-                    <a href="https://twitter.com/nishioishinsimp" target="_blank"><img src="./images/Previewdrawing.jpg" alt="Preview dessins compte twitter" class="imgdescchess"></a>
-                    <a href="https://twitter.com/nishioishinsimp"><p class="soustitre">Voici le lien de mon compte twitter!</p></a>
-                </div>
-            </div>
-            <p>
-                Ce compte est pour moi une excuse pour garder la motivation dans le temps : je ne cherche pas vraiment la popularité. Ma technique semble fonctionner, cela fait depuis 43 jours consécutifs que je dessine ! (voir plus en fonction de quand vous lirez ce texte.) 
-            </p>
-        </div>
-    </modal>
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+            <div class="row s-header__inner">
 
-    <modal class="detailpage6" style="display: none;">
-        <div class="canva">
-            <button class="closebtn" onclick="toggleDetails6()">&times;</button>
-            <h3 class="tittledesc">Bulletin du premier semèstre</h3>
-            <div class="imgdesc">
-                <div class="img-container">
-                    <a href="https://github.com/EsteBei/EsteBei.github.io/raw/main/images/Relev%C3%A9%20d%C3%A9tail%20%20Maquette%20S1-23-%20BEILLONNET%20Esteban.pdf"><img src="./images/previewrelevedenote.png" alt="Relevé de note" class="imgdescchess"></a>
-                    <a href="https://github.com/EsteBei/EsteBei.github.io/raw/main/images/Relev%C3%A9%20d%C3%A9tail%20%20Maquette%20S1-23-%20BEILLONNET%20Esteban.pdf"><p class="soustitre">Relevé de note du premier semèstre</p></a>
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="index.html">
+                            <img src="images/logo1.png" alt="Homepage">
+                        </a>
+                    </div>
+
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
+
+                <nav class="s-header__nav">    
+                    <ul class="s-header__menu-links">
+                        <li class="current"><a class="smoothscroll" href="#intro">Intro</a></li>
+                        <li><a class="smoothscroll" href="#about">Mon parcours</a></li>
+                        <li><a class="smoothscroll" href="#works">Mes créations</a></li>
+                    </ul> <!-- s-header__menu-links -->    
+                </nav> <!-- end s-header__nav -->
+
+            </div> <!-- end s-header__inner -->
+        </header> <!-- end s-header -->
+
+
+        <!-- # intro
+        ================================================== -->
+        <section id="intro" class="s-intro target-section">
+
+            <div class="row s-intro__content width-sixteen-col">
+                <div class="column lg-12 s-intro__content-inner grid-block grid-16">
+                    
+                    <div class="s-intro__content-text">
+
+                        <div class="s-intro__content-pretitle text-pretitle">Bonjour !</div>
+                        <h1 class="s-intro__content-title">
+                        Je suis Esteban Beillonnet - <br>
+                        Etudiant MMI <br>
+                        voici mon portfolio...
+                        </h1>                            
+
+                        <div class="s-intro__content-btns">
+                            <a class="smoothscroll btn" href="#about">Mon parcours</a>
+                            <a class="smoothscroll btn btn--stroke" href="#footer">Mes créations</a>
+                        </div> <!-- s-intro__content-btns -->   
+
+                    </div> <!-- s-intro__content-text -->                     
+                    
+                </div> <!-- s-intro__content-inner -->  
+            </div> <!-- s-intro__content -->
+
+            <ul class="s-intro__social social-list">
+                <li>
+                    <a href="#0">
+                        <a href="https://www.linkedin.com/in/esteban-beillonnet-22a497258/" target="_blank"><img src="images/linkedin2.svg" alt="LinkedIn" width="24" height="24"></a>
+                        <span class="u-screen-reader-text">LinkedIn</span>
+                    </a>
+                </li>
+            </ul> <!-- end s-intro__social -->
+
+            <div class="s-intro__content-media">                               
+                <img src="images/photocouv.jpg" srcset="images/photocouv.jpg 1x" alt="">
+            </div> <!-- s-intro__content-media -->                
+
+            <div class="s-intro__btn-download">
+                <a class="btn btn--stroke" href="images/CVBeillonnetEsteban.pdf">Mon CV</a>
+            </div> <!-- end s-intro__btn-download -->
+            
+            <div class="s-intro__scroll-down">
+                <a href="#about" class="smoothscroll">
+                    <div class="scroll-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+                    </div>
+                    <span class="scroll-text u-screen-reader-text">Scroll Down</span>
+                </a>
+            </div> <!-- s-intro__scroll-down -->
+
+        </section> <!-- end s-intro -->
+
+
+        <!-- # about
+        ================================================== -->
+        <section id="about" class="s-about target-section">
+
+            <div class="row s-about__content">
+                <div class="column xl-12">    
+                    
+                    <div class="section-header" data-num="01">
+                        <h2 class="text-display-title">Mon parcours</h2>
+                    </div> <!-- end section-header -->
+
+                    <p class="attention-getter">
+                        Je m’appelle Esteban Beillonnet et je suis actuellement en deuxième année de BUT MMI à l'IUT Nancy Charlemagne. Mon parcours a commencé à Bordeaux au sein du BUT information - communication à l'IUT Bordeaux Montaigne.
+                        <br>
+                        En 2023, je me suis réorienté vers la formation MMI ou j'entame aujourd'hui ma deuxième année.
+                    </p>
+
+                    <p class="attention-getter">
+                        En MMI je travaille les métiers du multimédia et de l'internet, je participe à des projets variés sur des sujets divers comme la conception de site web, le montage d'un court- métrage avec des effets spéciaux et de l'animation ou encore un jeu vidéo !
+                        <br>
+                        Suivez mon parcours et mes créations à travers ce site où je mettrai à jour mon portfolio. 
+                    </p>
+
+                </div> <!--end column -->
+            </div> <!--end s-about__content -->
+            
+        </section> <!-- end s-about -->   
+
+
+
+        <!-- # works
+        ================================================== -->
+        <section id="works" class="s-works target-section">
+
+            <div class="row">
+                <div class="column xl-12">
+                    <div class="section-header" data-num="02">
+                        <h2 class="text-display-title">Mes affiches</h2>
+                    </div> <!-- end section-header -->
                 </div>
             </div>
-            <p>
-                Voici donc en téléchargement le Bulletin à titre indicatif du premier semestre.
-            </p>
-        </div>
-    </modal>
+
+            <div class="row folio-entries">
+
+                <div class="column entry">
+                    <a href="images/Presentation_batteur2.png" class="entry__link glightbox" data-glightbox="title: Affiche batteur 1; description: .entry__desc-00">
+                        <div class="entry__thumb">
+                            <img src="images/Presentation_batteur2.png" srcset="images/Presentation_batteur2.png 1x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Affiche batteur</h4>
+                            <div class="entry__cat">Illustrator</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-00">
+                        <p>
+                        Premier prototype de l'affiche du batteur, réalisé avec Illustrator.
+                        <a href="https://www.youtube.com/@ElEsteparioSiberiano">Lien de la chaine</a>.
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="images/Presentation_batteur.png" class="entry__link glightbox" data-glightbox="title: Affiche batteur 2; description: .entry__desc-04">
+                        <div class="entry__thumb">
+                            <img src="images/Presentation_batteur.png" srcset="images/Presentation_batteur.png 1x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Affiche batteur n°2</h4>
+                            <div class="entry__cat">Illustrator</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-04">
+                        <p>
+                        Deuxième prototype de l'affiche du batteur.
+                        <a href="https://www.youtube.com/@ElEsteparioSiberiano">Lien de la chaine</a>.
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="images/Affiche_musicien.jpg" class="entry__link glightbox" data-glightbox="title: Affiche musicien; description: .entry__desc-02">
+                        <div class="entry__thumb">
+                            <img src="images/Affiche_musicien.jpg" srcset="images/Affiche_musicien.jpg 1x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Affiche compositeur</h4>
+                            <div class="entry__cat">Illustrator</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-02">
+                        <p>
+                        Affiche d'un compositeur de musique de jeu vidéo.
+                        <a href="https://fr.wikipedia.org/wiki/ZUN_(d%C3%A9veloppeur)">Découvrez le !</a>.
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="images/Couverture_splash.png" class="entry__link glightbox" data-glightbox="title: couverture fictive du magasine spalsh; description: .entry__desc-03">
+                        <div class="entry__thumb">
+                            <img src="images/Couverture_splash.png" srcset="images/Couverture_splash.png 1x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Couverture fictive pour le magasine splash</h4>
+                            <div class="entry__cat">Illustrator</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-03">
+                        <p>
+                        Couverture pour le magasine fictif spash réalisé en classe avec Illsutrator.
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="column xl-12">
+                    <div class="section-header" data-num="03">
+                        <h2 class="text-display-title">Mes créations vidéos</h2>
+                    </div> <!-- end section-header -->
+                </div>
+            </div>
+            <div class="row folio-entries">           
+                <div class="column entry">
+                    <a href="images/Thumbmail.png" class="entry__link glightbox" data-glightbox="title: Animation blender; description: .entry__desc-06">
+                        <div class="entry__thumb">
+                            <img src="images/Thumbmail.png" srcset="images/Thumbmail.png 1x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Animation blender</h4>
+                            <div class="entry__cat">Blender</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-06">
+                        <p>
+                        <a href="https://youtu.be/2jqSFKAsGv4">Animation blender réalisé en première année de MMI a L'IUT Nancy charlemagne dans le cadre d'un cours de modélisation 3D.</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column entry">
+                    <a href="images/motionimage.png" class="entry__link glightbox" data-glightbox="title: Motion design; description: .entry__desc-07">
+                        <div class="entry__thumb">
+                            <img src="images/motionimage.png" srcset="images/motionimage.png 1x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Motion design</h4>
+                            <div class="entry__cat">After Effects</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-07">
+                        <p>
+                        <a href="https://youtu.be/h5hLGZWEPsY">Animation en motion design réalisé avec After Effects en équipe.</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column entry">
+                    <a href="images/Meauxcroiseimage.png" class="entry__link glightbox" data-glightbox="title: Court métrage; description: .entry__desc-08">
+                        <div class="entry__thumb">
+                            <img src="images/Meauxcroiseimage.png" srcset="images/Meauxcroiseimage.png 1x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Court métrage</h4>
+                            <div class="entry__cat">After Effects</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-08">
+                        <p>
+                        <a href="https://youtu.be/3SIj03iYonA">Court métrage réalisé en équipe sur le sujet des effets spéciaux et animations incrustés.</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column entry">
+                    <a href="images/lovetitle.png" class="entry__link glightbox" data-glightbox="title: Animation Traditionnelle; description: .entry__desc-09">
+                        <div class="entry__thumb">
+                            <img src="images/lovetitle.png" srcset="images/lovetitle.png 1x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Animation Traditionnelle</h4>
+                            <div class="entry__cat">Krita</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-09">
+                        <p>
+                        <a href="https://youtu.be/eHMkjYv0wIc">Expérimentation d'animation traditionelle sur tablette graphique avec Krita.</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column entry">
+                    <a href="images/joueur_de_flute_le_lorrain-Original.jpeg" class="entry__link glightbox" data-glightbox="title: Animation de tableau; description: .entry__desc-10">
+                        <div class="entry__thumb">
+                            <img src="images/joueur_de_flute_le_lorrain-Original.jpeg" srcset="images/joueur_de_flute_le_lorrain-Original.jpeg 1x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Animation de tableau</h4>
+                            <div class="entry__cat">After Effects</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-10">
+                        <p>
+                        <a href="https://www.youtube.com/shorts/3khnrg1E-j4">Animation de tableau réalisée sur After Effects et photoshop.</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column entry">
+                    <a href="images/joueur_de_flute_le_lorrain-Original.jpeg" class="entry__link glightbox" data-glightbox="title: Animation de tableau; description: .entry__desc-10">
+                        <div class="entry__thumb">
+                            <img src="images/joueur_de_flute_le_lorrain-Original.jpeg" srcset="images/joueur_de_flute_le_lorrain-Original.jpeg 1x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Animation de tableau</h4>
+                            <div class="entry__cat">After Effects</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-10">
+                        <p>
+                        <a href="https://www.youtube.com/shorts/3khnrg1E-j4">Animation de tableau réalisée sur After Effects et photoshop.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br> <br>
+                <div class="row">
+                    <div class="column xl-12">
+                        <div class="section-header" data-num="04">
+                            <h2 class="text-display-title">Autres projets</h2>
+                        </div> <!-- end section-header -->
+                    </div>
+                </div>
+                <div class="row folio-entries">
+                    <div class="column entry">
+                        <a href="images/Buste.png" class="entry__link glightbox" data-glightbox="title: Buste 3D; description: .entry__desc-05">
+                            <div class="entry__thumb">
+                                <img src="images/Buste.png" srcset="images/Buste.png 1x" alt="">
+                            </div>
+                            <div class="entry__info">
+                                <h4 class="entry__title">Buste 3D</h4>
+                                <div class="entry__cat">Blender</div>
+                            </div>
+                        </a>
+    
+                        <div class="glightbox-desc entry__desc-05">
+                            <p>
+                            Buste sculpté en 3D avec Blender.
+                            </p>
+                        </div>
+                </div> <!-- entry --> 
+            </div> <!-- folio entries -->
+        </section> <!-- end s-works -->
+    
+                        <div class="swiper-pagination"></div>
+    
+                    </div> <!-- end swiper-container -->
+    
+                </div> <!-- end column -->
+            </div> <!-- end s-testimonials -->
+
+        </section> <!-- end s-works --> 
+
+        <!-- # footer 
+        ================================================== -->
+        <footer id="footer" class="s-footer target-section">
+
+            </div> <!-- end section-footer__content -->
+
+
+            <div class="row s-footer__buttons">
+               
+                <div class="column xl-6 tab-12">
+                    <a href="mailto:#0" class="btn btn--primary btn--large u-fullwidth">Message Me</a>
+                </div>
+          
+                <div class="column xl-6 tab-12">                    
+                    <a href="images/CVBeillonnetEsteban.pdf" class="btn btn--stroke btn--large u-fullwidth">Get My CV</a>
+                </div>
+            
+            </div> <!-- end section-footer__buttons -->              
+            
+            <div class="row s-footer__bottom">
+                
+                <div class="column xl-6 lg-12">
+                    <ul class="s-footer__social social-list">
+                        <li>
+                            <a href="#0">
+                                <a href="https://www.linkedin.com/in/esteban-beillonnet-22a497258/" target="_blank"><img src="images/linkedin2.svg" alt="LinkedIn" width="24" height="24"></a>
+                                <span class="u-screen-reader-text">LinkedIn</span>
+                            </a>
+                        </li>
+                    </ul> 
+                </div> <!-- end section-footer__social -->
+
+                <div class="column xl-6 lg-12">
+                    <p class="ss-copyright">
+                        <span>© Copyright Beillonnet Esteban</span> 
+                        <span>Design by <a href="https://styleshout.com/">StyleShout</a> Distribution by <a href="https://themewagon.com">ThemeWagon</a></span>
+                    </p>
+                </div>
+
+            </div> <!-- end section-footer__bottom -->          
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">                 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"></path></svg>
+                </a>                                
+                <span>Back To Top</span>   
+            </div> <!-- end ss-go-top -->
+            
+        </footer> <!-- end s-footer -->
+
+    </div> <!-- end page-wrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>
-<script src="script/script.js"></script>
