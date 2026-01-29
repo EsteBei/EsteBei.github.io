@@ -4024,6 +4024,7 @@ td:last-child {
     margin-top   : 0;
     margin-bottom: var(--vspace-0_125);
     color        : white;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 /* on hover
