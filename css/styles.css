@@ -4464,3 +4464,10 @@ td:last-child {
 .test3 {
     padding: 50px;
 }
+
+.text-display-title2 {
+    line-height   : 1.0717;
+    letter-spacing: -0.015em;
+    margin-top    : 0;
+    margin-bottom : var(--vspace-1_5);
+}
